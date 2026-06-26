@@ -1,0 +1,19 @@
+{
+  "name": "koishi-plugin-ll-rollpig",
+  "version": "1.0.0",
+  "description": "小猪抽取插件：今日小猪Canvas卡片、随机小猪、找猪（修复pighub API）",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "files": ["lib", "resource"],
+  "scripts": { "build": "tsc", "clean": "rimraf lib" },
+  "author": "lee",
+  "license": "MIT",
+  "keywords": ["koishi", "koishi-plugin", "pig", "pighub"],
+  "koishi": {
+    "description": { "zh": "小猪抽取插件：今日小猪Canvas卡片、随机PigHub猪图、找猪搜索" },
+    "service": { "implements": [] }
+  },
+  "peerDependencies": { "koishi": "^4.18.0" },
+  "dependencies": { "@napi-rs/canvas": "^0.1.97" },
+  "devDependencies": { "koishi": "^4.18.0", "typescript": "^5.4.0", "rimraf": "^5.0.0" }
+}
